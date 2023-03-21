@@ -1,0 +1,8 @@
+1~Juan~samsung
+3~Maria~Samsung 10 “
+7~Rodrigo~iphone X
+2~Carlos~Kodak
+7~Juan~Samsung 13 “
+3~Gustavo~iphone x
+8~Maria~samsung A20
+3~Maria~samsungA20
