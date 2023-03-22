@@ -2,6 +2,7 @@ package com.latam.alura.tienda.modelo;
 
 import java.math.BigDecimal;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -19,6 +20,7 @@ public class ItemsPedido {
 	private Long id;
 	
 	private int cantidad;
+	@Column(name="precio_unitario")
 	private BigDecimal precioUnitario;
 	
 	@ManyToOne(fetch=FetchType.LAZY)

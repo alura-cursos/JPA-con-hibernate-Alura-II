@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -23,6 +24,7 @@ public class Pedido {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 	private LocalDate fecha=LocalDate.now();
+	@Column(name="valor_total")
 	private BigDecimal valorTotal=new BigDecimal(0);
 	
 	@ManyToOne(fetch=FetchType.LAZY)

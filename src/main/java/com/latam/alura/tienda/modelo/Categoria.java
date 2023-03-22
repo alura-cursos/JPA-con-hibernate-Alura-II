@@ -8,7 +8,6 @@ import javax.persistence.Table;
 @Table(name="categorias")
 public class Categoria {
 	
-
 	@EmbeddedId
 	private CategoriaId categoriaId;
 	

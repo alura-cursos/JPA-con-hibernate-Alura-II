@@ -10,8 +10,7 @@ import com.latam.alura.tienda.utils.JPAUtils;
 
 public class PruebaDeDesempenho {
 	public static void main(String[] args) throws FileNotFoundException {
-		//LoadRecords.cargarRegistros();
-		
+//		LoadRecords.cargarRegistros();
 		EntityManager em = JPAUtils.getEntityManager();
 		
 		PedidoDao pedidoDao = new PedidoDao(em);
@@ -22,10 +21,5 @@ public class PruebaDeDesempenho {
 //		System.out.println(pedido.getFecha());
 //		System.out.println(pedido.getItems().size());
 		System.out.println(pedidoConCliente.getCliente().getNombre());
-		
-		
-		
 	}
-	
-	
 }
